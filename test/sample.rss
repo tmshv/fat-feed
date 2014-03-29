@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>Node.js Blog</title>
+  <atom:link href="http://blog.nodejs.org/" rel="self" type="application/rss+xml" />
+  <link>http://blog.nodejs.org/</link>
+	<description>The Blog about Node.js</description>
+  <lastBuildDate>Wed, 12 Mar 2014 14:59:02 GMT</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>weekly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://nodejs.org/</generator>
+  <image>
+    <url>http://nodejs.org/images/logo-light.png</url>
+		<title>Node.js</title>
+    <link>http://blog.nodejs.org/</link>
+	</image>
+  
+    <item>
+      <title>Node v0.11.12 (Unstable)</title>
+      <link>http://blog.nodejs.org/2014/03/12/node-v0-11-12-unstable/</link>
+      <pubDate>Wed, 12 Mar 2014 14:56:30 GMT</pubDate>
+      <dc:creator>undefined</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="true">http://blog.nodejs.org/2014/03/12/node-v0-11-12-unstable/</guid>
+      <description><![CDATA[<p>2014.03.11, Version 0.11.12 (Unstable)
+
+</p>
+<ul>
+<li><p>uv: Upgrade to v0.11.22 (Timothy J Fontaine)</p>
+</li>
+<li><p>buffer: allow toString to accept Infinity for end (Brian White)</p>
+</li>
+<li><p>child_process: add spawnSync/execSync (Bert Belder, Timothy J Fontaine)</p>
+</li>
+<li><p>cluster: handle bind errors on Windows (Alexis Campailla)</p>
+</li>
+<li><p>contextify: handle infinite recursion errors (Fedor Indutny)</p>
+</li>
+<li><p>crypto: allow custom generator for DiffieHellman (Brian White)</p>
+</li>
+<li><p>crypto: allow setting add&#39;l authenticated data (Brian White)</p>
+</li>
+<li><p>crypto: fix CipherFinal return value check (Brian White)</p>
+</li>
+<li><p>crypto: make NewSessionDoneCb public (Fedor Indutny)</p>
+</li>
+<li><p>dgram: pass the bytes sent to the send callback (Timothy J Fontaine)</p>
+</li>
+<li><p>dns: validate arguments in resolver (Kenan Sulayman)</p>
+</li>
+<li><p>dns: verify argument is valid function in resolve (Kenan Sulayman)</p>
+</li>
+<li><p>http: avoid duplicate keys in writeHead (David Björklund)</p>
+</li>
+<li><p>net: add localPort to connect options (Timothy J Fontaine)</p>
+</li>
+<li><p>node: do not print SyntaxError hints to stderr (Fedor Indutny)</p>
+</li>
+<li><p>node: invoke <code>beforeExit</code> again if loop was active (Fedor Indutny)</p>
+</li>
+<li><p>node: make AsyncListenerInst field more explicit (Trevor Norris)</p>
+</li>
+<li><p>os: networkInterfaces include scopeid for ipv6 (Xidorn Quan)</p>
+</li>
+<li><p>process: allow changing <code>exitCode</code> in <code>on(&#39;exit&#39;)</code> (Fedor Indutny)</p>
+</li>
+<li><p>readline: fix <code>line</code> event, if input emit &#39;end&#39; (Yazhong Liu)</p>
+</li>
+<li><p>src: add tracing.v8.on(&#39;gc&#39;) statistics hooks (Ben Noordhuis)</p>
+</li>
+<li><p>src: add v8.getHeapStatistics() function (Ben Noordhuis)</p>
+</li>
+<li><p>src: emit &#39;beforeExit&#39; event on process object (Ben Noordhuis)</p>
+</li>
+<li><p>src: move AsyncListener from process to tracing (Trevor Norris)</p>
+</li>
+<li><p>tls: fix crash in SNICallback (Fedor Indutny)</p>
+</li>
+<li><p>tls: introduce asynchronous <code>newSession</code> (Fedor Indutny)</p>
+</li>
+<li><p>util: show meaningful values for boxed primitives (Nathan Rajlich)</p>
+</li>
+<li><p>vm: don&#39;t copy Proxy object from parent context (Ben Noordhuis)</p>
+</li>
+<li><p>windows: make stdout/sterr pipes blocking (Alexis Campailla)</p>
+</li>
+<li><p>zlib: add sync versions for convenience methods (Nikolai Vavilov)</p>
+</li>
+</ul>
+<p>Source Code: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12.tar.gz</a>
+
+</p>
+<p>Macintosh Installer (Universal): <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12.pkg">http://nodejs.org/dist/v0.11.12/node-v0.11.12.pkg</a>
+
+</p>
+<p>Windows Installer: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-x86.msi">http://nodejs.org/dist/v0.11.12/node-v0.11.12-x86.msi</a>
+
+</p>
+<p>Windows x64 Installer: <a href="http://nodejs.org/dist/v0.11.12/x64/node-v0.11.12-x64.msi">http://nodejs.org/dist/v0.11.12/x64/node-v0.11.12-x64.msi</a>
+
+</p>
+<p>Windows x64 Files: <a href="http://nodejs.org/dist/v0.11.12/x64/">http://nodejs.org/dist/v0.11.12/x64/</a>
+
+</p>
+<p>Linux 32-bit Binary: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-linux-x86.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12-linux-x86.tar.gz</a>
+
+</p>
+<p>Linux 64-bit Binary: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-linux-x64.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12-linux-x64.tar.gz</a>
+
+</p>
+<p>Solaris 32-bit Binary: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-sunos-x86.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12-sunos-x86.tar.gz</a>
+
+</p>
+<p>Solaris 64-bit Binary: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-sunos-x64.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12-sunos-x64.tar.gz</a>
+
+</p>
+<p>Other release files: <a href="http://nodejs.org/dist/v0.11.12/">http://nodejs.org/dist/v0.11.12/</a>
+
+</p>
+<p>Website: <a href="http://nodejs.org/docs/v0.11.12/">http://nodejs.org/docs/v0.11.12/</a>
+
+</p>
+<p>Documentation: <a href="http://nodejs.org/docs/v0.11.12/api/">http://nodejs.org/docs/v0.11.12/api/</a>
+
+</p>
+<p>Shasums:
+</p>
+<pre><code>058930a3993e91bc6e79a0874b2c1a0b103469b1  node-v0.11.12-darwin-x64.tar.gz
+0e6210a19ac94920e0357716f3600722de63763b  node-v0.11.12-darwin-x86.tar.gz
+b9d2eae74df55bdb252fab239d2c496aec329aad  node-v0.11.12-linux-x64.tar.gz
+d0f22e5821f0b105300415283143e9da4937dca2  node-v0.11.12-linux-x86.tar.gz
+7b9e432212e7ad04e1e4a00b0747cfe5e1ad50d0  node-v0.11.12-sunos-x64.tar.gz
+66e4af23c0489b258b87d8cd2eee350294e6c3f5  node-v0.11.12-sunos-x86.tar.gz
+5452d6aadbef3b4a65bb147407a0fd1657a7fb15  node-v0.11.12-x86.msi
+3522b87d7c10527182bc9f1cff313a737c1a37bb  node-v0.11.12.pkg
+d991057af05dd70feb2126469ce279a2fe869e86  node-v0.11.12.tar.gz
+6544c0c193a80f7450fa8f36f8080cbe062d27bb  node.exe
+c27b3dee963e5ec0c3b25e42292b3679e4e2f50b  node.exp
+c52a86505b53edc9d8fe6f65916fc77165e404d1  node.lib
+65ceb13db7ff0706a5ea3611ac2cbd84afe6798c  node.pdb
+d943ecaf3fd55b198c617e01f52bdee480d1c9b7  openssl-cli.exe
+97628b29758cbbdddab027215f441a623f95e35e  openssl-cli.pdb
+d02987fe0852a85e63acdbd45d7178ad55d6fe0b  pkgsrc/nodejs-ia32-0.11.12.tgz
+4076893ac96718edbc2f2ed1f20953a8ec66cf48  pkgsrc/nodejs-x64-0.11.12.tgz
+e88f8ae5a722e135083ed3d0085e2d15ea527125  x64/node-v0.11.12-x64.msi
+ea6fc65061aafcf4e4b58d58a3e7eee9c4866a0b  x64/node.exe
+3c7cc6b0fcd1e304e6ccdc179e5a7df24909910e  x64/node.exp
+7b906562dc52d9e5825de3e4ce46ac114f7f76d3  x64/node.lib
+06a0d0b1c941f805dd48f9b85c8baef1e0e936d4  x64/node.pdb
+90f3d8c4f470b5a46934e90a7b0f983afc6fa0ec  x64/openssl-cli.exe
+c5df898ab9dd3ed28826aa7be715c0ae52842f10  x64/openssl-cli.pdb</code></pre>
+]]></description>
+      <content:encoded><![CDATA[<p>2014.03.11, Version 0.11.12 (Unstable)
+
+</p>
+<ul>
+<li><p>uv: Upgrade to v0.11.22 (Timothy J Fontaine)</p>
+</li>
+<li><p>buffer: allow toString to accept Infinity for end (Brian White)</p>
+</li>
+<li><p>child_process: add spawnSync/execSync (Bert Belder, Timothy J Fontaine)</p>
+</li>
+<li><p>cluster: handle bind errors on Windows (Alexis Campailla)</p>
+</li>
+<li><p>contextify: handle infinite recursion errors (Fedor Indutny)</p>
+</li>
+<li><p>crypto: allow custom generator for DiffieHellman (Brian White)</p>
+</li>
+<li><p>crypto: allow setting add&#39;l authenticated data (Brian White)</p>
+</li>
+<li><p>crypto: fix CipherFinal return value check (Brian White)</p>
+</li>
+<li><p>crypto: make NewSessionDoneCb public (Fedor Indutny)</p>
+</li>
+<li><p>dgram: pass the bytes sent to the send callback (Timothy J Fontaine)</p>
+</li>
+<li><p>dns: validate arguments in resolver (Kenan Sulayman)</p>
+</li>
+<li><p>dns: verify argument is valid function in resolve (Kenan Sulayman)</p>
+</li>
+<li><p>http: avoid duplicate keys in writeHead (David Björklund)</p>
+</li>
+<li><p>net: add localPort to connect options (Timothy J Fontaine)</p>
+</li>
+<li><p>node: do not print SyntaxError hints to stderr (Fedor Indutny)</p>
+</li>
+<li><p>node: invoke <code>beforeExit</code> again if loop was active (Fedor Indutny)</p>
+</li>
+<li><p>node: make AsyncListenerInst field more explicit (Trevor Norris)</p>
+</li>
+<li><p>os: networkInterfaces include scopeid for ipv6 (Xidorn Quan)</p>
+</li>
+<li><p>process: allow changing <code>exitCode</code> in <code>on(&#39;exit&#39;)</code> (Fedor Indutny)</p>
+</li>
+<li><p>readline: fix <code>line</code> event, if input emit &#39;end&#39; (Yazhong Liu)</p>
+</li>
+<li><p>src: add tracing.v8.on(&#39;gc&#39;) statistics hooks (Ben Noordhuis)</p>
+</li>
+<li><p>src: add v8.getHeapStatistics() function (Ben Noordhuis)</p>
+</li>
+<li><p>src: emit &#39;beforeExit&#39; event on process object (Ben Noordhuis)</p>
+</li>
+<li><p>src: move AsyncListener from process to tracing (Trevor Norris)</p>
+</li>
+<li><p>tls: fix crash in SNICallback (Fedor Indutny)</p>
+</li>
+<li><p>tls: introduce asynchronous <code>newSession</code> (Fedor Indutny)</p>
+</li>
+<li><p>util: show meaningful values for boxed primitives (Nathan Rajlich)</p>
+</li>
+<li><p>vm: don&#39;t copy Proxy object from parent context (Ben Noordhuis)</p>
+</li>
+<li><p>windows: make stdout/sterr pipes blocking (Alexis Campailla)</p>
+</li>
+<li><p>zlib: add sync versions for convenience methods (Nikolai Vavilov)</p>
+</li>
+</ul>
+<p>Source Code: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12.tar.gz</a>
+
+</p>
+<p>Macintosh Installer (Universal): <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12.pkg">http://nodejs.org/dist/v0.11.12/node-v0.11.12.pkg</a>
+
+</p>
+<p>Windows Installer: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-x86.msi">http://nodejs.org/dist/v0.11.12/node-v0.11.12-x86.msi</a>
+
+</p>
+<p>Windows x64 Installer: <a href="http://nodejs.org/dist/v0.11.12/x64/node-v0.11.12-x64.msi">http://nodejs.org/dist/v0.11.12/x64/node-v0.11.12-x64.msi</a>
+
+</p>
+<p>Windows x64 Files: <a href="http://nodejs.org/dist/v0.11.12/x64/">http://nodejs.org/dist/v0.11.12/x64/</a>
+
+</p>
+<p>Linux 32-bit Binary: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-linux-x86.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12-linux-x86.tar.gz</a>
+
+</p>
+<p>Linux 64-bit Binary: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-linux-x64.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12-linux-x64.tar.gz</a>
+
+</p>
+<p>Solaris 32-bit Binary: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-sunos-x86.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12-sunos-x86.tar.gz</a>
+
+</p>
+<p>Solaris 64-bit Binary: <a href="http://nodejs.org/dist/v0.11.12/node-v0.11.12-sunos-x64.tar.gz">http://nodejs.org/dist/v0.11.12/node-v0.11.12-sunos-x64.tar.gz</a>
+
+</p>
+<p>Other release files: <a href="http://nodejs.org/dist/v0.11.12/">http://nodejs.org/dist/v0.11.12/</a>
+
+</p>
+<p>Website: <a href="http://nodejs.org/docs/v0.11.12/">http://nodejs.org/docs/v0.11.12/</a>
+
+</p>
+<p>Documentation: <a href="http://nodejs.org/docs/v0.11.12/api/">http://nodejs.org/docs/v0.11.12/api/</a>
+
+</p>
+<p>Shasums:
+</p>
+<pre><code>058930a3993e91bc6e79a0874b2c1a0b103469b1  node-v0.11.12-darwin-x64.tar.gz
+0e6210a19ac94920e0357716f3600722de63763b  node-v0.11.12-darwin-x86.tar.gz
+b9d2eae74df55bdb252fab239d2c496aec329aad  node-v0.11.12-linux-x64.tar.gz
+d0f22e5821f0b105300415283143e9da4937dca2  node-v0.11.12-linux-x86.tar.gz
+7b9e432212e7ad04e1e4a00b0747cfe5e1ad50d0  node-v0.11.12-sunos-x64.tar.gz
+66e4af23c0489b258b87d8cd2eee350294e6c3f5  node-v0.11.12-sunos-x86.tar.gz
+5452d6aadbef3b4a65bb147407a0fd1657a7fb15  node-v0.11.12-x86.msi
+3522b87d7c10527182bc9f1cff313a737c1a37bb  node-v0.11.12.pkg
+d991057af05dd70feb2126469ce279a2fe869e86  node-v0.11.12.tar.gz
+6544c0c193a80f7450fa8f36f8080cbe062d27bb  node.exe
+c27b3dee963e5ec0c3b25e42292b3679e4e2f50b  node.exp
+c52a86505b53edc9d8fe6f65916fc77165e404d1  node.lib
+65ceb13db7ff0706a5ea3611ac2cbd84afe6798c  node.pdb
+d943ecaf3fd55b198c617e01f52bdee480d1c9b7  openssl-cli.exe
+97628b29758cbbdddab027215f441a623f95e35e  openssl-cli.pdb
+d02987fe0852a85e63acdbd45d7178ad55d6fe0b  pkgsrc/nodejs-ia32-0.11.12.tgz
+4076893ac96718edbc2f2ed1f20953a8ec66cf48  pkgsrc/nodejs-x64-0.11.12.tgz
+e88f8ae5a722e135083ed3d0085e2d15ea527125  x64/node-v0.11.12-x64.msi
+ea6fc65061aafcf4e4b58d58a3e7eee9c4866a0b  x64/node.exe
+3c7cc6b0fcd1e304e6ccdc179e5a7df24909910e  x64/node.exp
+7b906562dc52d9e5825de3e4ce46ac114f7f76d3  x64/node.lib
+06a0d0b1c941f805dd48f9b85c8baef1e0e936d4  x64/node.pdb
+90f3d8c4f470b5a46934e90a7b0f983afc6fa0ec  x64/openssl-cli.exe
+c5df898ab9dd3ed28826aa7be715c0ae52842f10  x64/openssl-cli.pdb</code></pre>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Node v0.10.26 (Stable)</title>
+      <link>http://blog.nodejs.org/2014/02/18/node-v0-10-26-stable/</link>
+      <pubDate>Wed, 19 Feb 2014 00:40:22 GMT</pubDate>
+      <dc:creator>undefined</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="true">http://blog.nodejs.org/2014/02/18/node-v0-10-26-stable/</guid>
+      <description><![CDATA[<p>2014.02.18, Version 0.10.26 (Stable)
+
+</p>
+<ul>
+<li><p>uv: Upgrade to v0.10.25 (Timothy J Fontaine)</p>
+</li>
+<li><p>npm: upgrade to 1.4.3 (isaacs)</p>
+</li>
+<li><p>v8: support compiling with VS2013 (Fedor Indutny)</p>
+</li>
+<li><p>cares: backport TXT parsing fix (Fedor Indutny)</p>
+</li>
+<li><p>crypto: throw on SignFinal failure (Fedor Indutny)</p>
+</li>
+<li><p>crypto: update root certificates (Ben Noordhuis)</p>
+</li>
+<li><p>debugger: Fix breakpoint not showing after restart (Farid Neshat)</p>
+</li>
+<li><p>fs: make unwatchFile() insensitive to path (iamdoron)</p>
+</li>
+<li><p>net: do not re-emit stream errors (Fedor Indutny)</p>
+</li>
+<li><p>net: make Socket destroy() re-entrance safe (Jun Ma)</p>
+</li>
+<li><p>net: reset <code>endEmitted</code> on reconnect (Fedor Indutny)</p>
+</li>
+<li><p>node: do not close stdio implicitly (Fedor Indutny)</p>
+</li>
+<li><p>zlib: avoid assertion in close (Fedor Indutny)</p>
+</li>
+</ul>
+<p>Source Code: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz</a>
+
+</p>
+<p>Macintosh Installer (Universal): <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26.pkg">http://nodejs.org/dist/v0.10.26/node-v0.10.26.pkg</a>
+
+</p>
+<p>Windows Installer: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-x86.msi">http://nodejs.org/dist/v0.10.26/node-v0.10.26-x86.msi</a>
+
+</p>
+<p>Windows x64 Installer: <a href="http://nodejs.org/dist/v0.10.26/x64/node-v0.10.26-x64.msi">http://nodejs.org/dist/v0.10.26/x64/node-v0.10.26-x64.msi</a>
+
+</p>
+<p>Windows x64 Files: <a href="http://nodejs.org/dist/v0.10.26/x64/">http://nodejs.org/dist/v0.10.26/x64/</a>
+
+</p>
+<p>Linux 32-bit Binary: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x86.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x86.tar.gz</a>
+
+</p>
+<p>Linux 64-bit Binary: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x64.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x64.tar.gz</a>
+
+</p>
+<p>Solaris 32-bit Binary: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-sunos-x86.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26-sunos-x86.tar.gz</a>
+
+</p>
+<p>Solaris 64-bit Binary: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-sunos-x64.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26-sunos-x64.tar.gz</a>
+
+</p>
+<p>Other release files: <a href="http://nodejs.org/dist/v0.10.26/">http://nodejs.org/dist/v0.10.26/</a>
+
+</p>
+<p>Website: <a href="http://nodejs.org/docs/v0.10.26/">http://nodejs.org/docs/v0.10.26/</a>
+
+</p>
+<p>Documentation: <a href="http://nodejs.org/docs/v0.10.26/api/">http://nodejs.org/docs/v0.10.26/api/</a>
+
+</p>
+<p>Shasums:
+</p>
+<pre><code>6806b3ed47c3f68de83685835ed455ed02ec0598  node-v0.10.26-darwin-x64.tar.gz
+efdfe5c4f7d8e7443775aa57408eeadd3d4294a2  node-v0.10.26-darwin-x86.tar.gz
+d15d39e119bdcf75c6fc222f51ff0630b2611160  node-v0.10.26-linux-x64.tar.gz
+b3bebee7f256644266fccce04f54e2825eccbfc0  node-v0.10.26-linux-x86.tar.gz
+846ba8173fd0f6499800765f4679130465f4584b  node-v0.10.26-sunos-x64.tar.gz
+e5bf3dae6a0597bb8be029f6f0119bea2f1612f0  node-v0.10.26-sunos-x86.tar.gz
+2521fc37951c7e37a3c78394721887f9b17ac634  node-v0.10.26-x86.msi
+ff7512f49bb9f1ec2bc3f974588421305f1e28c7  node-v0.10.26.pkg
+2340ec2dce1794f1ca1c685b56840dd515a271b2  node-v0.10.26.tar.gz
+180824e6714b814d793b0875a7035331806ec1b7  node.exe
+a86480a61151535811e262df3792a2fba8bd9040  node.exp
+b93834766d19b4b842ddd19234c1f78931c049d9  node.lib
+b19628922c8ccf7168c13ece5b38b1d5c8393e41  node.pdb
+e112d4059671f6b5c1b56803c4bbb65c890cae49  pkgsrc/nodejs-ia32-0.10.26.tgz
+6a5eb9fe688332f4d078dae356a77015f9740c35  pkgsrc/nodejs-x64-0.10.26.tgz
+6a98fb6a3b35cfb6950e49d845613e6d0ad8eda5  x64/node-v0.10.26-x64.msi
+dfdccf3ee14adf23d1a4b96889f98d6b9bcc0c59  x64/node.exe
+c6f15581d5345209432dda8a28ea7e32592f51b3  x64/node.exp
+35820c8b4c2e9c61dc03fbd25b431b2b699b1507  x64/node.lib
+b0ad9d72a8f42d4dd65c529e296077038daa87dc  x64/node.pdb</code></pre>
+]]></description>
+      <content:encoded><![CDATA[<p>2014.02.18, Version 0.10.26 (Stable)
+
+</p>
+<ul>
+<li><p>uv: Upgrade to v0.10.25 (Timothy J Fontaine)</p>
+</li>
+<li><p>npm: upgrade to 1.4.3 (isaacs)</p>
+</li>
+<li><p>v8: support compiling with VS2013 (Fedor Indutny)</p>
+</li>
+<li><p>cares: backport TXT parsing fix (Fedor Indutny)</p>
+</li>
+<li><p>crypto: throw on SignFinal failure (Fedor Indutny)</p>
+</li>
+<li><p>crypto: update root certificates (Ben Noordhuis)</p>
+</li>
+<li><p>debugger: Fix breakpoint not showing after restart (Farid Neshat)</p>
+</li>
+<li><p>fs: make unwatchFile() insensitive to path (iamdoron)</p>
+</li>
+<li><p>net: do not re-emit stream errors (Fedor Indutny)</p>
+</li>
+<li><p>net: make Socket destroy() re-entrance safe (Jun Ma)</p>
+</li>
+<li><p>net: reset <code>endEmitted</code> on reconnect (Fedor Indutny)</p>
+</li>
+<li><p>node: do not close stdio implicitly (Fedor Indutny)</p>
+</li>
+<li><p>zlib: avoid assertion in close (Fedor Indutny)</p>
+</li>
+</ul>
+<p>Source Code: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz</a>
+
+</p>
+<p>Macintosh Installer (Universal): <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26.pkg">http://nodejs.org/dist/v0.10.26/node-v0.10.26.pkg</a>
+
+</p>
+<p>Windows Installer: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-x86.msi">http://nodejs.org/dist/v0.10.26/node-v0.10.26-x86.msi</a>
+
+</p>
+<p>Windows x64 Installer: <a href="http://nodejs.org/dist/v0.10.26/x64/node-v0.10.26-x64.msi">http://nodejs.org/dist/v0.10.26/x64/node-v0.10.26-x64.msi</a>
+
+</p>
+<p>Windows x64 Files: <a href="http://nodejs.org/dist/v0.10.26/x64/">http://nodejs.org/dist/v0.10.26/x64/</a>
+
+</p>
+<p>Linux 32-bit Binary: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x86.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x86.tar.gz</a>
+
+</p>
+<p>Linux 64-bit Binary: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x64.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x64.tar.gz</a>
+
+</p>
+<p>Solaris 32-bit Binary: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-sunos-x86.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26-sunos-x86.tar.gz</a>
+
+</p>
+<p>Solaris 64-bit Binary: <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26-sunos-x64.tar.gz">http://nodejs.org/dist/v0.10.26/node-v0.10.26-sunos-x64.tar.gz</a>
+
+</p>
+<p>Other release files: <a href="http://nodejs.org/dist/v0.10.26/">http://nodejs.org/dist/v0.10.26/</a>
+
+</p>
+<p>Website: <a href="http://nodejs.org/docs/v0.10.26/">http://nodejs.org/docs/v0.10.26/</a>
+
+</p>
+<p>Documentation: <a href="http://nodejs.org/docs/v0.10.26/api/">http://nodejs.org/docs/v0.10.26/api/</a>
+
+</p>
+<p>Shasums:
+</p>
+<pre><code>6806b3ed47c3f68de83685835ed455ed02ec0598  node-v0.10.26-darwin-x64.tar.gz
+efdfe5c4f7d8e7443775aa57408eeadd3d4294a2  node-v0.10.26-darwin-x86.tar.gz
+d15d39e119bdcf75c6fc222f51ff0630b2611160  node-v0.10.26-linux-x64.tar.gz
+b3bebee7f256644266fccce04f54e2825eccbfc0  node-v0.10.26-linux-x86.tar.gz
+846ba8173fd0f6499800765f4679130465f4584b  node-v0.10.26-sunos-x64.tar.gz
+e5bf3dae6a0597bb8be029f6f0119bea2f1612f0  node-v0.10.26-sunos-x86.tar.gz
+2521fc37951c7e37a3c78394721887f9b17ac634  node-v0.10.26-x86.msi
+ff7512f49bb9f1ec2bc3f974588421305f1e28c7  node-v0.10.26.pkg
+2340ec2dce1794f1ca1c685b56840dd515a271b2  node-v0.10.26.tar.gz
+180824e6714b814d793b0875a7035331806ec1b7  node.exe
+a86480a61151535811e262df3792a2fba8bd9040  node.exp
+b93834766d19b4b842ddd19234c1f78931c049d9  node.lib
+b19628922c8ccf7168c13ece5b38b1d5c8393e41  node.pdb
+e112d4059671f6b5c1b56803c4bbb65c890cae49  pkgsrc/nodejs-ia32-0.10.26.tgz
+6a5eb9fe688332f4d078dae356a77015f9740c35  pkgsrc/nodejs-x64-0.10.26.tgz
+6a98fb6a3b35cfb6950e49d845613e6d0ad8eda5  x64/node-v0.10.26-x64.msi
+dfdccf3ee14adf23d1a4b96889f98d6b9bcc0c59  x64/node.exe
+c6f15581d5345209432dda8a28ea7e32592f51b3  x64/node.exp
+35820c8b4c2e9c61dc03fbd25b431b2b699b1507  x64/node.lib
+b0ad9d72a8f42d4dd65c529e296077038daa87dc  x64/node.pdb</code></pre>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Node v0.11.11 (Unstable)</title>
+      <link>http://blog.nodejs.org/2014/01/28/node-v0-11-11-unstable/</link>
+      <pubDate>Wed, 29 Jan 2014 03:46:04 GMT</pubDate>
+      <dc:creator>undefined</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="true">http://blog.nodejs.org/2014/01/28/node-v0-11-11-unstable/</guid>
+      <description><![CDATA[<p>2014.01.29, Version 0.11.11 (Unstable)
+
+</p>
+<ul>
+<li><p>v8: Upgrade to 3.22.24.19</p>
+</li>
+<li><p>http_parser: Upgrade to 2.2.1</p>
+</li>
+<li><p>openssl: Upgrade to 1.0.1f</p>
+</li>
+<li><p>uv: Upgrade to 0.11.18</p>
+</li>
+<li><p>async-listener: revamp of subsystem (Trevor Norris)</p>
+</li>
+<li><p>node: do not ever close stdio (Fedor Indutny)</p>
+</li>
+<li><p>http: use writev on chunked encoding (Trevor Norris)</p>
+</li>
+<li><p>async_wrap/timers: remove Add/RemoveAsyncListener (Trevor Norris)</p>
+</li>
+<li><p>child_process: better error reporting for exec (Fedor Indutny)</p>
+</li>
+<li><p>crypto: add newline to cert and key if not present (Fedor Indutny)</p>
+</li>
+<li><p>crypto: clear error in GetPeerCertificate (Fedor Indutny)</p>
+</li>
+<li><p>crypto: honor default ciphers in client mode (Jacob Hoffman-Andrews)</p>
+</li>
+<li><p>crypto: introduce .setEngine(engine, [flags]) (Fedor Indutny)</p>
+</li>
+<li><p>crypto: support custom pbkdf2 digest methods (Ben Noordhuis)</p>
+</li>
+<li><p>domain: fix off-by-one in Domain.exit() (Ryan Graham)</p>
+</li>
+<li><p>http: concatenate duplicate headers by default (Alex Kocharin)</p>
+</li>
+<li><p>http: do not emit EOF non-readable socket (Fedor Indutny)</p>
+</li>
+<li><p>node: fix argument parsing with -p arg (Alexis Campailla)</p>
+</li>
+<li><p>path: improve POSIX path.join() performance (Jo Liss)</p>
+</li>
+<li><p>tls: emit <code>clientError</code> on early socket close (Fedor Indutny)</p>
+</li>
+<li><p>tls: introduce <code>.setMaxSendFragment(size)</code> (Fedor Indutny)</p>
+</li>
+<li><p>tls: make cert/pfx optional in tls.createServer() (Ben Noordhuis)</p>
+</li>
+<li><p>tls: process accumulated input (Fedor Indutny)</p>
+</li>
+<li><p>tls: show human-readable error messages (Ben Noordhuis)</p>
+</li>
+<li><p>util: handle escaped forward slashes correctly (Tom Gallacher)</p>
+</li>
+</ul>
+<p>Source Code: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11.tar.gz</a>
+
+</p>
+<p>Macintosh Installer (Universal): <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11.pkg">http://nodejs.org/dist/v0.11.11/node-v0.11.11.pkg</a>
+
+</p>
+<p>Windows Installer: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-x86.msi">http://nodejs.org/dist/v0.11.11/node-v0.11.11-x86.msi</a>
+
+</p>
+<p>Windows x64 Installer: <a href="http://nodejs.org/dist/v0.11.11/x64/node-v0.11.11-x64.msi">http://nodejs.org/dist/v0.11.11/x64/node-v0.11.11-x64.msi</a>
+
+</p>
+<p>Windows x64 Files: <a href="http://nodejs.org/dist/v0.11.11/x64/">http://nodejs.org/dist/v0.11.11/x64/</a>
+
+</p>
+<p>Linux 32-bit Binary: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-linux-x86.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11-linux-x86.tar.gz</a>
+
+</p>
+<p>Linux 64-bit Binary: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-linux-x64.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11-linux-x64.tar.gz</a>
+
+</p>
+<p>Solaris 32-bit Binary: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-sunos-x86.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11-sunos-x86.tar.gz</a>
+
+</p>
+<p>Solaris 64-bit Binary: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-sunos-x64.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11-sunos-x64.tar.gz</a>
+
+</p>
+<p>Other release files: <a href="http://nodejs.org/dist/v0.11.11/">http://nodejs.org/dist/v0.11.11/</a>
+
+</p>
+<p>Website: <a href="http://nodejs.org/docs/v0.11.11/">http://nodejs.org/docs/v0.11.11/</a>
+
+</p>
+<p>Documentation: <a href="http://nodejs.org/docs/v0.11.11/api/">http://nodejs.org/docs/v0.11.11/api/</a>
+
+</p>
+<p>Shasums:
+</p>
+<pre><code>b14d62e992a12cb552277770942a89b94c9edddd  node-v0.11.11-darwin-x64.tar.gz
+62ebf588c1909f0d820e975ee88cd506c0c8de30  node-v0.11.11-darwin-x86.tar.gz
+cb0f4477d6ec96993e0b538885e960027872a936  node-v0.11.11-linux-x64.tar.gz
+ac9e91f268f1ac1bad79a0c817d5d8689ece1095  node-v0.11.11-linux-x86.tar.gz
+e25eab9e2e560d02b0ca57a219a0eba3d4e3d14d  node-v0.11.11-sunos-x64.tar.gz
+3a1ce4e226edf56fb7811ebe13da9163ae0a1460  node-v0.11.11-sunos-x86.tar.gz
+a0b237df15b1ce07049f72b4a49b4ab5109dfe67  node-v0.11.11-x86.msi
+78807abf9b4faeea4b405ad9fb13daab09306772  node-v0.11.11.pkg
+65b257ec6584bf339f06f58a8a02ba024e13f283  node-v0.11.11.tar.gz
+33fa2097f75f5077bb1ef34930594a591d922a7f  node.exe
+192b4503b351fd9a98a136f697e85c4372c71bd1  node.exp
+bd9a3482a6be8b5708172450abe9358a3956816e  node.lib
+d51780e8f3a936d2dd28fa00f832424ad6e7ca42  node.pdb
+a687afbb8e4d5a3a120a812e889dae2f0eca2fa4  pkgsrc/nodejs-ia32-0.11.11.tgz
+3da73af5f7059000b1a898259de9e7197b6e9bac  pkgsrc/nodejs-x64-0.11.11.tgz
+9fa14e245795b7adf0dfebe317490fefd40bfbe9  x64/node-v0.11.11-x64.msi
+e19bcf90ef4d864a11744648cadb864911ee5f4e  x64/node.exe
+83e31621bfc45b9b86f4724a3255cf3afdb3236a  x64/node.exp
+c778c1853e45686e5fefb463a419658ff9b966e1  x64/node.lib
+ced8fe51cd619d07c53c0f1f1fdcfc5ff3c70373  x64/node.pdb</code></pre>
+]]></description>
+      <content:encoded><![CDATA[<p>2014.01.29, Version 0.11.11 (Unstable)
+
+</p>
+<ul>
+<li><p>v8: Upgrade to 3.22.24.19</p>
+</li>
+<li><p>http_parser: Upgrade to 2.2.1</p>
+</li>
+<li><p>openssl: Upgrade to 1.0.1f</p>
+</li>
+<li><p>uv: Upgrade to 0.11.18</p>
+</li>
+<li><p>async-listener: revamp of subsystem (Trevor Norris)</p>
+</li>
+<li><p>node: do not ever close stdio (Fedor Indutny)</p>
+</li>
+<li><p>http: use writev on chunked encoding (Trevor Norris)</p>
+</li>
+<li><p>async_wrap/timers: remove Add/RemoveAsyncListener (Trevor Norris)</p>
+</li>
+<li><p>child_process: better error reporting for exec (Fedor Indutny)</p>
+</li>
+<li><p>crypto: add newline to cert and key if not present (Fedor Indutny)</p>
+</li>
+<li><p>crypto: clear error in GetPeerCertificate (Fedor Indutny)</p>
+</li>
+<li><p>crypto: honor default ciphers in client mode (Jacob Hoffman-Andrews)</p>
+</li>
+<li><p>crypto: introduce .setEngine(engine, [flags]) (Fedor Indutny)</p>
+</li>
+<li><p>crypto: support custom pbkdf2 digest methods (Ben Noordhuis)</p>
+</li>
+<li><p>domain: fix off-by-one in Domain.exit() (Ryan Graham)</p>
+</li>
+<li><p>http: concatenate duplicate headers by default (Alex Kocharin)</p>
+</li>
+<li><p>http: do not emit EOF non-readable socket (Fedor Indutny)</p>
+</li>
+<li><p>node: fix argument parsing with -p arg (Alexis Campailla)</p>
+</li>
+<li><p>path: improve POSIX path.join() performance (Jo Liss)</p>
+</li>
+<li><p>tls: emit <code>clientError</code> on early socket close (Fedor Indutny)</p>
+</li>
+<li><p>tls: introduce <code>.setMaxSendFragment(size)</code> (Fedor Indutny)</p>
+</li>
+<li><p>tls: make cert/pfx optional in tls.createServer() (Ben Noordhuis)</p>
+</li>
+<li><p>tls: process accumulated input (Fedor Indutny)</p>
+</li>
+<li><p>tls: show human-readable error messages (Ben Noordhuis)</p>
+</li>
+<li><p>util: handle escaped forward slashes correctly (Tom Gallacher)</p>
+</li>
+</ul>
+<p>Source Code: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11.tar.gz</a>
+
+</p>
+<p>Macintosh Installer (Universal): <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11.pkg">http://nodejs.org/dist/v0.11.11/node-v0.11.11.pkg</a>
+
+</p>
+<p>Windows Installer: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-x86.msi">http://nodejs.org/dist/v0.11.11/node-v0.11.11-x86.msi</a>
+
+</p>
+<p>Windows x64 Installer: <a href="http://nodejs.org/dist/v0.11.11/x64/node-v0.11.11-x64.msi">http://nodejs.org/dist/v0.11.11/x64/node-v0.11.11-x64.msi</a>
+
+</p>
+<p>Windows x64 Files: <a href="http://nodejs.org/dist/v0.11.11/x64/">http://nodejs.org/dist/v0.11.11/x64/</a>
+
+</p>
+<p>Linux 32-bit Binary: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-linux-x86.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11-linux-x86.tar.gz</a>
+
+</p>
+<p>Linux 64-bit Binary: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-linux-x64.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11-linux-x64.tar.gz</a>
+
+</p>
+<p>Solaris 32-bit Binary: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-sunos-x86.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11-sunos-x86.tar.gz</a>
+
+</p>
+<p>Solaris 64-bit Binary: <a href="http://nodejs.org/dist/v0.11.11/node-v0.11.11-sunos-x64.tar.gz">http://nodejs.org/dist/v0.11.11/node-v0.11.11-sunos-x64.tar.gz</a>
+
+</p>
+<p>Other release files: <a href="http://nodejs.org/dist/v0.11.11/">http://nodejs.org/dist/v0.11.11/</a>
+
+</p>
+<p>Website: <a href="http://nodejs.org/docs/v0.11.11/">http://nodejs.org/docs/v0.11.11/</a>
+
+</p>
+<p>Documentation: <a href="http://nodejs.org/docs/v0.11.11/api/">http://nodejs.org/docs/v0.11.11/api/</a>
+
+</p>
+<p>Shasums:
+</p>
+<pre><code>b14d62e992a12cb552277770942a89b94c9edddd  node-v0.11.11-darwin-x64.tar.gz
+62ebf588c1909f0d820e975ee88cd506c0c8de30  node-v0.11.11-darwin-x86.tar.gz
+cb0f4477d6ec96993e0b538885e960027872a936  node-v0.11.11-linux-x64.tar.gz
+ac9e91f268f1ac1bad79a0c817d5d8689ece1095  node-v0.11.11-linux-x86.tar.gz
+e25eab9e2e560d02b0ca57a219a0eba3d4e3d14d  node-v0.11.11-sunos-x64.tar.gz
+3a1ce4e226edf56fb7811ebe13da9163ae0a1460  node-v0.11.11-sunos-x86.tar.gz
+a0b237df15b1ce07049f72b4a49b4ab5109dfe67  node-v0.11.11-x86.msi
+78807abf9b4faeea4b405ad9fb13daab09306772  node-v0.11.11.pkg
+65b257ec6584bf339f06f58a8a02ba024e13f283  node-v0.11.11.tar.gz
+33fa2097f75f5077bb1ef34930594a591d922a7f  node.exe
+192b4503b351fd9a98a136f697e85c4372c71bd1  node.exp
+bd9a3482a6be8b5708172450abe9358a3956816e  node.lib
+d51780e8f3a936d2dd28fa00f832424ad6e7ca42  node.pdb
+a687afbb8e4d5a3a120a812e889dae2f0eca2fa4  pkgsrc/nodejs-ia32-0.11.11.tgz
+3da73af5f7059000b1a898259de9e7197b6e9bac  pkgsrc/nodejs-x64-0.11.11.tgz
+9fa14e245795b7adf0dfebe317490fefd40bfbe9  x64/node-v0.11.11-x64.msi
+e19bcf90ef4d864a11744648cadb864911ee5f4e  x64/node.exe
+83e31621bfc45b9b86f4724a3255cf3afdb3236a  x64/node.exp
+c778c1853e45686e5fefb463a419658ff9b966e1  x64/node.lib
+ced8fe51cd619d07c53c0f1f1fdcfc5ff3c70373  x64/node.pdb</code></pre>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Node v0.10.25 (Stable)</title>
+      <link>http://blog.nodejs.org/2014/01/23/node-v0-10-25-stable/</link>
+      <pubDate>Thu, 23 Jan 2014 19:43:30 GMT</pubDate>
+      <dc:creator>undefined</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="true">http://blog.nodejs.org/2014/01/23/node-v0-10-25-stable/</guid>
+      <description><![CDATA[<p>2014.01.23, Version 0.10.25 (Stable)
+
+</p>
+<ul>
+<li><p>uv: Upgrade to v0.10.23</p>
+</li>
+<li><p>npm: Upgrade to v1.3.24</p>
+</li>
+<li><p>v8: Fix enumeration for objects with lots of properties</p>
+</li>
+<li><p>child_process: fix spawn() optional arguments (Sam Roberts)</p>
+</li>
+<li><p>cluster: report more errors to workers (Fedor Indutny)</p>
+</li>
+<li><p>domains: exit() only affects active domains (Ryan Graham)</p>
+</li>
+<li><p>src: OnFatalError handler must abort() (Timothy J Fontaine)</p>
+</li>
+<li><p>stream: writes may return false but forget to emit drain (Yang Tianyang)</p>
+</li>
+</ul>
+<p>Source Code: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25.tar.gz</a>
+
+</p>
+<p>Macintosh Installer (Universal): <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25.pkg">http://nodejs.org/dist/v0.10.25/node-v0.10.25.pkg</a>
+
+</p>
+<p>Windows Installer: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-x86.msi">http://nodejs.org/dist/v0.10.25/node-v0.10.25-x86.msi</a>
+
+</p>
+<p>Windows x64 Installer: <a href="http://nodejs.org/dist/v0.10.25/x64/node-v0.10.25-x64.msi">http://nodejs.org/dist/v0.10.25/x64/node-v0.10.25-x64.msi</a>
+
+</p>
+<p>Windows x64 Files: <a href="http://nodejs.org/dist/v0.10.25/x64/">http://nodejs.org/dist/v0.10.25/x64/</a>
+
+</p>
+<p>Linux 32-bit Binary: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-linux-x86.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25-linux-x86.tar.gz</a>
+
+</p>
+<p>Linux 64-bit Binary: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-linux-x64.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25-linux-x64.tar.gz</a>
+
+</p>
+<p>Solaris 32-bit Binary: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-sunos-x86.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25-sunos-x86.tar.gz</a>
+
+</p>
+<p>Solaris 64-bit Binary: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-sunos-x64.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25-sunos-x64.tar.gz</a>
+
+</p>
+<p>Other release files: <a href="http://nodejs.org/dist/v0.10.25/">http://nodejs.org/dist/v0.10.25/</a>
+
+</p>
+<p>Website: <a href="http://nodejs.org/docs/v0.10.25/">http://nodejs.org/docs/v0.10.25/</a>
+
+</p>
+<p>Documentation: <a href="http://nodejs.org/docs/v0.10.25/api/">http://nodejs.org/docs/v0.10.25/api/</a>
+
+</p>
+<p>Shasums:
+</p>
+<pre><code>b347508376ceef724b464e6009ec2daead7ea572  node-v0.10.25-darwin-x64.tar.gz
+f7b3c7a36b45a83360bcd9e541e64bf18ef29272  node-v0.10.25-darwin-x86.tar.gz
+7c75e7e13561be1222bddd438a84a8f228fe1bc3  node-v0.10.25-linux-x64.tar.gz
+16a2c861de5b27ef907dc18253fcd4f33d506662  node-v0.10.25-linux-x86.tar.gz
+05bdc1cd7933ccfa95c2f1f058ff0125eacbdc2d  node-v0.10.25-sunos-x64.tar.gz
+250a48c9a2b6c6a8a6feebb0d7d33f96bf8d82f4  node-v0.10.25-sunos-x86.tar.gz
+ce78cc8b49e339f71888f627c4e985dda0a83e27  node-v0.10.25-x86.msi
+abab975e86250b51a7434d229d13b30acdf4e82e  node-v0.10.25.pkg
+1e330b4fbb6f7bb858a0b37d8573dd4956f40885  node-v0.10.25.tar.gz
+e3779ed14a68dc6f711ead628fe11a127d09547c  node.exe
+35521b6142d39fa371aba7d1fda87a1836db78e4  node.exp
+35eb46e5d04fdb1c1417876d1712b85eea6be03c  node.lib
+cc749498572b4cf4b277225404beefdd75a4e903  node.pdb
+9bf1bf3a59a3f0dc0fd32f9504e8011e5b4ebc42  pkgsrc/nodejs-ia32-0.10.25.tgz
+f4a6e7d561c321b917c1b6a021fe38cd330a374e  pkgsrc/nodejs-x64-0.10.25.tgz
+aab984860cc02e1d27a0932c4c8d34e5e3551ebf  x64/node-v0.10.25-x64.msi
+d2f884d75d5f30693f62625787f27fb2a8824178  x64/node.exe
+75cdbe43984c9a9f6c5f1e5875fa7422c97b2d62  x64/node.exp
+108c2d9dd6ecf7cad83c4cb5cd62303f51c5570a  x64/node.lib
+a7c37dadc994c281d08f6a55bfbd01ecf738fe66  x64/node.pdb</code></pre>
+]]></description>
+      <content:encoded><![CDATA[<p>2014.01.23, Version 0.10.25 (Stable)
+
+</p>
+<ul>
+<li><p>uv: Upgrade to v0.10.23</p>
+</li>
+<li><p>npm: Upgrade to v1.3.24</p>
+</li>
+<li><p>v8: Fix enumeration for objects with lots of properties</p>
+</li>
+<li><p>child_process: fix spawn() optional arguments (Sam Roberts)</p>
+</li>
+<li><p>cluster: report more errors to workers (Fedor Indutny)</p>
+</li>
+<li><p>domains: exit() only affects active domains (Ryan Graham)</p>
+</li>
+<li><p>src: OnFatalError handler must abort() (Timothy J Fontaine)</p>
+</li>
+<li><p>stream: writes may return false but forget to emit drain (Yang Tianyang)</p>
+</li>
+</ul>
+<p>Source Code: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25.tar.gz</a>
+
+</p>
+<p>Macintosh Installer (Universal): <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25.pkg">http://nodejs.org/dist/v0.10.25/node-v0.10.25.pkg</a>
+
+</p>
+<p>Windows Installer: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-x86.msi">http://nodejs.org/dist/v0.10.25/node-v0.10.25-x86.msi</a>
+
+</p>
+<p>Windows x64 Installer: <a href="http://nodejs.org/dist/v0.10.25/x64/node-v0.10.25-x64.msi">http://nodejs.org/dist/v0.10.25/x64/node-v0.10.25-x64.msi</a>
+
+</p>
+<p>Windows x64 Files: <a href="http://nodejs.org/dist/v0.10.25/x64/">http://nodejs.org/dist/v0.10.25/x64/</a>
+
+</p>
+<p>Linux 32-bit Binary: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-linux-x86.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25-linux-x86.tar.gz</a>
+
+</p>
+<p>Linux 64-bit Binary: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-linux-x64.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25-linux-x64.tar.gz</a>
+
+</p>
+<p>Solaris 32-bit Binary: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-sunos-x86.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25-sunos-x86.tar.gz</a>
+
+</p>
+<p>Solaris 64-bit Binary: <a href="http://nodejs.org/dist/v0.10.25/node-v0.10.25-sunos-x64.tar.gz">http://nodejs.org/dist/v0.10.25/node-v0.10.25-sunos-x64.tar.gz</a>
+
+</p>
+<p>Other release files: <a href="http://nodejs.org/dist/v0.10.25/">http://nodejs.org/dist/v0.10.25/</a>
+
+</p>
+<p>Website: <a href="http://nodejs.org/docs/v0.10.25/">http://nodejs.org/docs/v0.10.25/</a>
+
+</p>
+<p>Documentation: <a href="http://nodejs.org/docs/v0.10.25/api/">http://nodejs.org/docs/v0.10.25/api/</a>
+
+</p>
+<p>Shasums:
+</p>
+<pre><code>b347508376ceef724b464e6009ec2daead7ea572  node-v0.10.25-darwin-x64.tar.gz
+f7b3c7a36b45a83360bcd9e541e64bf18ef29272  node-v0.10.25-darwin-x86.tar.gz
+7c75e7e13561be1222bddd438a84a8f228fe1bc3  node-v0.10.25-linux-x64.tar.gz
+16a2c861de5b27ef907dc18253fcd4f33d506662  node-v0.10.25-linux-x86.tar.gz
+05bdc1cd7933ccfa95c2f1f058ff0125eacbdc2d  node-v0.10.25-sunos-x64.tar.gz
+250a48c9a2b6c6a8a6feebb0d7d33f96bf8d82f4  node-v0.10.25-sunos-x86.tar.gz
+ce78cc8b49e339f71888f627c4e985dda0a83e27  node-v0.10.25-x86.msi
+abab975e86250b51a7434d229d13b30acdf4e82e  node-v0.10.25.pkg
+1e330b4fbb6f7bb858a0b37d8573dd4956f40885  node-v0.10.25.tar.gz
+e3779ed14a68dc6f711ead628fe11a127d09547c  node.exe
+35521b6142d39fa371aba7d1fda87a1836db78e4  node.exp
+35eb46e5d04fdb1c1417876d1712b85eea6be03c  node.lib
+cc749498572b4cf4b277225404beefdd75a4e903  node.pdb
+9bf1bf3a59a3f0dc0fd32f9504e8011e5b4ebc42  pkgsrc/nodejs-ia32-0.10.25.tgz
+f4a6e7d561c321b917c1b6a021fe38cd330a374e  pkgsrc/nodejs-x64-0.10.25.tgz
+aab984860cc02e1d27a0932c4c8d34e5e3551ebf  x64/node-v0.10.25-x64.msi
+d2f884d75d5f30693f62625787f27fb2a8824178  x64/node.exe
+75cdbe43984c9a9f6c5f1e5875fa7422c97b2d62  x64/node.exp
+108c2d9dd6ecf7cad83c4cb5cd62303f51c5570a  x64/node.lib
+a7c37dadc994c281d08f6a55bfbd01ecf738fe66  x64/node.pdb</code></pre>
+]]></content:encoded>
+    </item>
+    
+</channel>
+</rss>
